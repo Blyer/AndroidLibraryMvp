@@ -1,4 +1,4 @@
-package com.ysy.app.base;
+package com.ysy.app.core.scene.activity.base;
 
 import org.base.library.activity.BaseActivity;
 import org.base.library.bean.MessageEvent;

@@ -4,7 +4,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.ysy.app.R;
-import com.ysy.app.base.AppBaseActivity;
+import com.ysy.app.core.scene.activity.base.AppBaseActivity;
 import com.ysy.app.core.presenter.LoginPresenter;
 import com.ysy.app.core.scene.callback.ILoginScene;
 
