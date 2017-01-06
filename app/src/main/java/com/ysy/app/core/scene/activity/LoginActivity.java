@@ -1,14 +1,16 @@
 package com.ysy.app.core.scene.activity;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 
 import com.ysy.app.R;
-import com.ysy.app.core.scene.activity.base.AppBaseActivity;
 import com.ysy.app.core.presenter.LoginPresenter;
+import com.ysy.app.core.scene.activity.base.AppBaseActivity;
 import com.ysy.app.core.scene.callback.ILoginScene;
 
 import org.base.library.bean.HttpRequestPackage;
+import org.base.library.utils.JumpUtils;
 import org.base.library.utils.StatusBarUtils;
 import org.base.library.utils.ToastUtils;
 import org.base.library.view.UnifyButton;
@@ -80,6 +82,9 @@ public class LoginActivity extends AppBaseActivity implements ILoginScene {
     public void loginSuccess() {
         closeLoadingDialog();
         ToastUtils.show("登录成功");
+        Intent intent = new Intent(mActivity, MainActivity.class);
+        JumpUtils.jump(mActivity, intent);
+        finish();
     }
 
     @Override
